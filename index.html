@@ -1,56 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background: #fff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-        }
-
-        a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Портфолио</h1>
-    <li><strong>Даниил Сергеев</strong> Разработчик программного обеспечения. Работы на C#, связаны с базовыми знаниями по разработке ПО.</li>
-    <ul>
-        <li><a href="https://github.com/DiRasher04/lab_2_OS" target="_blank">Ссылка 1: Программа для открытия файлов</a></li>
-        <li><a href="https://github.com/DiRasher04/lab_3_OS" target="_blank">Ссылка 2: Процессы системы</a></li>
-        <li><a href="https://github.com/DiRasher04/lab_5_OS" target="_blank">Ссылка 3: быстродействие процессора и оперативной памяти</a></li>
-        <li><a href="https://github.com/DiRasher04/Course_Work_TA" target="_blank">Ссылка 4: Транслятор языка си</a></li>
-    </ul>
+    <header>
+        <h1>Даниил Сергеев</h1>
+        <img src="1.jpg" alt="Мое фото" class="profile-photo">
+    </header>
+    <main>
+        <div class="info-block">
+            <h2>Разработчик на C#, Java, Web-разработчик</h2>
+            <div class="projects">
+                <div class="project">
+                    <a href="https://github.com/DiRasher04/lab_2_OS" target="_blank">Программа для открытия файлов</a>
+                    <p>Рабочая программа для открытия любых файлов на вашем пк, разработанная на языке C# для операционной системы Windows</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/DiRasher04/lab_5_OS" target="_blank">Бстродействие процессора и оперативной памяти</a>
+                    <p>Это ПО позволит вам изучить быстродействие вашей системы, узнать характеристики комплектующих вашего ПК</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/DiRasher04/Course_Work_TA" target="_blank">Транслятор языка си</a>
+                    <p>Транслятор подмножества языка Си, который позволяет транслировать различные арифметические и логические выражжения</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/DiRasher04/lab_3_OS" target="_blank">Процессы системы</a>
+                    <p>С помощью этой программы вы можете создавать, удалять и изменять процессы внутри системы своего компьютера</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
